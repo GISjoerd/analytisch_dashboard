@@ -1,0 +1,9 @@
+CREATE OR REPLACE VIEW public.informatie_view
+AS SELECT informatie_data.fieldlab,
+    informatie_data.beschrijving,
+    informatie_data.constructie,
+    informatie_data.schimmel,
+    informatie_data.bouwjaar_dak,
+    informatie_data.installatie_datum,
+    informatie_data.opmerkingen
+   FROM informatie_data;

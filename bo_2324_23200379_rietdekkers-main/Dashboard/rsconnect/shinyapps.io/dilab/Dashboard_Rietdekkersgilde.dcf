@@ -1,0 +1,12 @@
+name: Dashboard_Rietdekkersgilde
+title: Dashboard_Rietdekkersgilde
+username: dilab
+account: dilab
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 12156694
+bundleId: 8767204
+url: https://dilab.shinyapps.io/Dashboard_Rietdekkersgilde/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE

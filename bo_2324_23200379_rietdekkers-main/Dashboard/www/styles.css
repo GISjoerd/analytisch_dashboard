@@ -1,0 +1,257 @@
+/* Variabelen */
+:root {
+    --wit: #ffffff;
+    --lichtgrijs: #F6F6F5;
+    --geel: #FDB833;
+    --blauw: #1789FC;
+    --grijs: #E7E7E7;
+    --bslib-spacer: 1rem;
+}
+
+/* Importeer icons*/
+/@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+/* Navbar */
+.navbar-nav > li > a, .navbar-brand {
+    color: white !important;
+}
+
+.navbar {
+  --bs-navbar-brand-color: white;
+}
+
+.navbar-nav > li > a,
+.navbar-brand {
+  color: white !important;  
+}
+
+/* Algemeen */
+body {
+    background-color: var(--lichtgrijs);
+    font-size: 0.875rem;
+}
+body, .btn, .dropdown-menu.inner {
+    font-size: 0.875rem;
+}
+
+/* Cards */
+.card {
+    background-color: white;
+    box-shadow: none;
+    border-top: 2px solid var(--geel);
+}
+.card-header {
+    background-color: white;
+}
+.nav-pills .nav-link.active {
+    background-color: var(--geel);
+    border-radius: 2em;
+}
+.card .nav-underline .nav-link.active {
+    font-weight: bold;
+    border-bottom-color: var(--blauw);
+}
+.card .nav-underline .nav-link:hover {
+    border-bottom-color: var(--geel);
+}
+#gemiddelden_staafgrafiek{
+    font-weight: bold;
+}
+.nav .nav-pills {
+    display: flex;
+    align-content: space-between;
+}
+.nav-underline .nav-link{
+    padding-left: 0!important;
+    padding-right: 0!important;
+}
+.card-body #test {
+  padding-top: 0;
+}
+.omstandigheden-titel{
+  font-size: 1em;
+}
+.card-body #omstandigheden-grafiek{
+  padding-top: 0;
+}
+.sensoren-offline{
+  font-weight: normal;
+  font-size: 0.95em;
+}
+
+
+
+/* Popover */
+.shiny-input-container .radio input, .shiny-input-container .radio input:hover {
+    background-color: var(--grijs);
+    border: none;
+}
+.shiny-input-container .radio input:checked {
+    background-color: var(--blauw);
+    border: none;
+}
+.popover-header {
+    background-color: var(--blauw);
+    color: white;
+}
+.popover{
+    background-color: white;
+}
+
+.popover .form-group{
+    margin-bottom: 0;
+}
+
+/* Fieldlab Filters */
+.custom-action-button {
+    background-color: var(--grijs);
+    border: none;
+    border-radius: 2em;
+    padding: 0.3em;
+}
+
+.custom-action-button.selected {
+    background-color: var(--geel); 
+}
+
+/* Sidebar */
+.bslib-sidebar-layout .sidebar-title {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.form-control {
+    background-color: var(--lichtgrijs);
+    border: none;
+}
+.input-group-text {
+    background-color: var(--grijs);
+    border: none;
+}
+.datepicker table tr td.active.active {
+    background-color: var(--blauw);
+}
+.datepicker table tr td.active.active:hover {
+    background-color: var(--blauw);
+}
+.btn-light {
+    background-color: var(--lichtgrijs);
+    border: none;
+}
+.dropdown-menu {
+    --bs-dropdown-bg: var(--lichtgrijs);
+}
+.reset-filters-button {
+    background-color: var(--geel);
+    border: none;
+    border-radius: 2em;
+    padding: 0.5em;
+    margin-top: 0.3em;
+}
+.control-label{
+    font-weight: bold;
+}
+.bs-deselect-all, .bs-select-all {
+    background-color: var(--grijs);
+}
+.sidebar {
+    border-right: none !important;
+    overflow-y: hidden !important;
+    gap: 0.7rem;
+}
+.shiny-input-container .checkbox input:checked {
+    background-color: var(--blauw);
+    border: none;
+}
+.shiny-input-container .checkbox input {
+    background-color: var(--grijs);
+    border: none;
+}
+.bslib-sidebar-layout>.sidebar>.sidebar-content {
+  gap: 0.7rem;
+}
+
+/*Tabellen*/
+.table{
+    --bs-table-bg: white;
+}
+
+.table>thead {
+  border-bottom-color: var(--blauw);
+}
+
+/*Download button*/
+.custom-download-button {
+  padding: 0.1rem;
+  border: none;
+  --bs-btn-hover-bg: white !important;
+  --bs-btn-hover-color: var(--blauw) !important;
+}
+
+/*Staafgrafiek gemiddelden buttons*/
+.action-button-graph-g {
+    background-color: var(--grijs);
+    border: none;
+    border-radius: 2em;
+    --bs-btn-padding-x: 0.5em;
+    --bs-btn-padding-y: 0.2em;
+    font-size: 0.9em;
+}
+
+.action-button-graph-g.selected {
+        background-color: var(--geel); 
+}
+
+/*Staafgrafiek omstandigheden buttons*/
+.action-button-graph-o {
+    background-color: var(--grijs);
+    border: none;
+    border-radius: 2em;
+    --bs-btn-padding-x: 0.5em;
+    --bs-btn-padding-y: 0.2em;
+    font-size: 0.9em;
+}
+
+.action-button-graph-o.selected {
+        background-color: var(--geel); 
+}
+
+/*Kaart*/
+.leaflet .info {
+  background: #ffffff00; /* Achtergrondkleur instellen */
+  box-shadow: none; /* Schaduw uitschakelen */
+}
+
+/*Tooltip*/
+.info-icon{
+  color: #a4a2a2;
+}
+
+#info-icon .bi{
+  margin-left: 5px;
+  color: #a4a2a2;
+}
+
+/*Wijzigingen oplsaan button*/
+
+.opslaan-container{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.wijzigingen-opslaan-button{
+  width: 20%;
+  background-color: var(--geel);
+  border: none;
+  border-radius: 2em;
+  padding: 0.3em;
+}
+
+/*Download button*/
+.download-metadata {
+  background-color: var(--grijs);
+  border: none;
+  border-radius: 2em;
+  padding: 0.3em;
+}
